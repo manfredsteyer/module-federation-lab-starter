@@ -24,7 +24,8 @@
               "projects/mfe1/src/assets"
             ],
             "styles": [],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mfe1/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -52,18 +53,22 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "extraWebpackConfig": "projects/mfe1/webpack.prod.config.js"
             }
           }
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "mfe1:build"
+            "browserTarget": "mfe1:build",
+            "extraWebpackConfig": "projects/mfe1/webpack.config.js",
+            "port": 3000
           },
           "configurations": {
             "production": {
-              "browserTarget": "mfe1:build:production"
+              "browserTarget": "mfe1:build:production",
+              "extraWebpackConfig": "projects/mfe1/webpack.prod.config.js"
             }
           }
         },
@@ -87,7 +92,8 @@
             "styles": [
               "projects/mfe1/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mfe1/webpack.config.js"
           }
         },
         "lint": {
@@ -138,7 +144,8 @@
               "projects/shell/src/assets"
             ],
             "styles": [],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/shell/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -166,18 +173,22 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             }
           }
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "shell:build"
+            "browserTarget": "shell:build",
+            "extraWebpackConfig": "projects/shell/webpack.config.js",
+            "port": 5000
           },
           "configurations": {
             "production": {
-              "browserTarget": "shell:build:production"
+              "browserTarget": "shell:build:production",
+              "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             }
           }
         },
@@ -199,7 +210,8 @@
               "projects/shell/src/assets"
             ],
             "styles": [],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/shell/webpack.config.js"
           }
         },
         "lint": {
